@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCMain">
+            <connections>
+                <outlet property="btnClear" destination="1nM-sr-sdz" id="vHV-PL-PzA"/>
+                <outlet property="btnComplete" destination="L1W-Yg-oLI" id="VBd-Wk-n6R"/>
+                <outlet property="btnJoy" destination="rah-Nw-H1Q" id="D45-Gt-kAQ"/>
+                <outlet property="btnLed" destination="QOZ-6Q-EiJ" id="89r-9y-nP0"/>
+                <outlet property="btnPot" destination="aUN-xT-kq4" id="Hv7-XV-Jjq"/>
+                <outlet property="btnSubmit" destination="nTT-CB-kcD" id="NFL-0I-l9o"/>
+                <outlet property="imgviewLedColor" destination="5IC-tn-WhY" id="aKG-fI-1Sp"/>
+                <outlet property="imgviewPoint" destination="Hjz-kv-Gll" id="jcU-ej-mnx"/>
+                <outlet property="imgviewPotmeter" destination="Q2t-wZ-HXE" id="T22-3m-cR6"/>
+                <outlet property="imgviewRocker" destination="pDj-EV-fv9" id="jEf-fF-GJs"/>
+                <outlet property="imgviewTitle" destination="tf8-dw-XGk" id="rBE-z0-Eg8"/>
+                <outlet property="lbHum" destination="0Ct-3i-4Jv" id="jOv-uB-9LL"/>
+                <outlet property="lbTemp" destination="oDy-8S-vlA" id="8Sy-hK-zTO"/>
+                <outlet property="txtMessage" destination="rdt-WT-yS9" id="jWK-5X-qpH"/>
+                <outlet property="view" destination="sA3-1N-It3" id="QcG-8Z-U2f"/>
+                <outlet property="viewJoy" destination="f98-3M-gID" id="mEi-GU-TV0"/>
+                <outlet property="viewLed" destination="4NW-aj-Sab" id="rJh-yI-aeg"/>
+                <outlet property="viewMainFrame" destination="1" id="hTg-KW-Gh6"/>
+                <outlet property="viewMask" destination="BCa-f2-vCk" id="TYx-XC-ARQ"/>
+                <outlet property="viewPicker" destination="DHX-36-p9M" id="lcm-j9-VKd"/>
+                <outlet property="viewPot" destination="qmH-r0-JjF" id="9fX-mc-wMt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sA3-1N-It3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="center" id="1">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone4 bg.jpg" id="LOa-d4-oZj">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QOZ-6Q-EiJ" userLabel="LED">
+                            <rect key="frame" x="25" y="35" width="30" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="1_1_LEDTabUnSelected.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="1_1_LEDTabSelected.png"/>
+                            <connections>
+                                <action selector="actionLed:" destination="-1" eventType="touchUpInside" id="ExA-Pf-ZQ2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rah-Nw-H1Q" userLabel="JOY">
+                            <rect key="frame" x="25" y="101" width="30" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="1_1_JoystickTabUnSelected.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="1_1_JoystickTabSelected.png"/>
+                            <connections>
+                                <action selector="actionJoy:" destination="-1" eventType="touchUpInside" id="ydl-OX-zSz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aUN-xT-kq4" userLabel="POT">
+                            <rect key="frame" x="25" y="167" width="30" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="1_1_PotentiometerTabUnSelected.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="1_1_PotentiometerTabSelected.png"/>
+                            <connections>
+                                <action selector="actionPot:" destination="-1" eventType="touchUpInside" id="kqs-wQ-xpw"/>
+                            </connections>
+                        </button>
+                        <view hidden="YES" contentMode="scaleToFill" id="qmH-r0-JjF" userLabel="ViewPot" customClass="CustomView">
+                            <rect key="frame" x="55" y="27.5" width="264" height="245"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_3_Potentiometer.png" id="uB6-yt-3gC">
+                                    <rect key="frame" x="0.0" y="7" width="264" height="198"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Q2t-wZ-HXE">
+                                    <rect key="frame" x="0.0" y="7" width="264" height="198"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" id="f98-3M-gID" userLabel="ViewJoy" customClass="CustomView">
+                            <rect key="frame" x="55" y="28" width="264" height="245"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_2_AllButton.png" id="pDj-EV-fv9">
+                                    <rect key="frame" x="0.0" y="7" width="264" height="198"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="4NW-aj-Sab" userLabel="ViewLed" customClass="CustomView">
+                            <rect key="frame" x="55" y="28" width="264" height="245"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="DHX-36-p9M" userLabel="viewPicker" customClass="CustomView">
+                                    <rect key="frame" x="0.0" y="7" width="264" height="198"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_4_LED_OFF.png" id="5IC-tn-WhY" userLabel="imgLedColor">
+                                            <rect key="frame" x="0.0" y="0.0" width="264" height="198"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_4_ring.png" id="Hjz-kv-Gll" userLabel="imgPoint">
+                                            <rect key="frame" x="72" y="94" width="10" height="10"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b2p-Ow-B6e" userLabel="Buzzer">
+                            <rect key="frame" x="240" y="257" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="2_2_ButtonOff.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="2_1_ButtonOn.png"/>
+                            <connections>
+                                <action selector="actionBuzzer:" destination="-1" eventType="touchUpInside" id="pHe-bh-f4j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="haz-Db-wfl" userLabel="Relay">
+                            <rect key="frame" x="240" y="286" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="2_2_ButtonOff.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="2_1_ButtonOn.png"/>
+                            <connections>
+                                <action selector="actionRelay:" destination="-1" eventType="touchUpInside" id="8kV-wL-2D0"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oDy-8S-vlA">
+                            <rect key="frame" x="235" y="326" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.24705882352941178" green="0.9137254901960784" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ct-3i-4Jv">
+                            <rect key="frame" x="235" y="358" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.2470588235" green="0.91372549020000005" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" id="rdt-WT-yS9">
+                            <rect key="frame" x="25" y="418" width="275" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1nM-sr-sdz" userLabel="Clear">
+                            <rect key="frame" x="160" y="452" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="2_3_ButtonResetOn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="2_4_ButtonResetOff.png"/>
+                            <connections>
+                                <action selector="actionClear:" destination="-1" eventType="touchUpInside" id="gl3-UF-hhw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nTT-CB-kcD" userLabel="Submit">
+                            <rect key="frame" x="235" y="452" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="2_5_ButtonUploadOn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="2_6_ButtonUploadOff.png"/>
+                            <connections>
+                                <action selector="actionSubmit:" destination="-1" eventType="touchUpInside" id="zEc-Jz-lbJ"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_5_kong.png" id="tf8-dw-XGk">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view alpha="0.5" contentMode="scaleToFill" id="BCa-f2-vCk" userLabel="ViewMask">
+                            <rect key="frame" x="0.0" y="30" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L1W-Yg-oLI">
+                    <rect key="frame" x="228" y="527" width="92" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="完成"/>
+                    <connections>
+                        <action selector="actionComplete:" destination="-1" eventType="touchUpInside" id="IUi-QL-enc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1_1_JoystickTabSelected.png" width="70" height="152"/>
+        <image name="1_1_JoystickTabUnSelected.png" width="70" height="152"/>
+        <image name="1_1_LEDTabSelected.png" width="70" height="152"/>
+        <image name="1_1_LEDTabUnSelected.png" width="70" height="152"/>
+        <image name="1_1_PotentiometerTabSelected.png" width="70" height="147"/>
+        <image name="1_1_PotentiometerTabUnSelected.png" width="70" height="146"/>
+        <image name="1_2_AllButton.png" width="596" height="448"/>
+        <image name="1_3_Potentiometer.png" width="596" height="448"/>
+        <image name="1_4_LED_OFF.png" width="596" height="448"/>
+        <image name="1_4_ring.png" width="42" height="42"/>
+        <image name="1_5_kong.png" width="720" height="66"/>
+        <image name="2_1_ButtonOn.png" width="87" height="36"/>
+        <image name="2_2_ButtonOff.png" width="86" height="36"/>
+        <image name="2_3_ButtonResetOn.png" width="123" height="39"/>
+        <image name="2_4_ButtonResetOff.png" width="123" height="39"/>
+        <image name="2_5_ButtonUploadOn.png" width="124" height="39"/>
+        <image name="2_6_ButtonUploadOff.png" width="124" height="39"/>
+        <image name="iphone4 bg.jpg" width="640" height="960"/>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[VCMain centralManager:didConnectPeripheral:]:VCMain.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.aryMessages count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VCMain peripheral:didWriteValueForCharacteristic:error:]:VCMain.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.aryMessages count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VCMain writeMessage:]:VCMain.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bleDevice.peripheral">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

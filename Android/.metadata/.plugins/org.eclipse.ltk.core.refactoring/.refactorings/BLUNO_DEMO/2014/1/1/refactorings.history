@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;BLUNO/src/com.example.bluno&apos;&#x0A;- Original project: &apos;BLUNO_DEMO&apos;&#x0A;- Destination element: &apos;BLUNO/src/com.example.bluno&apos;&#x0A;- Original elements:&#x0A;     com.example.bluno_demo.BlunoLibrary.java&#x0A;     com.example.bluno_demo.BluetoothLeService.java" description="Copy compilation units" destination="=BLUNO/src&lt;com.example.bluno" element1="/src&lt;com.example.bluno_demo{BlunoLibrary.java" element2="/src&lt;com.example.bluno_demo{BluetoothLeService.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1388641212061" units="2" version="1.0"/>
+</session>
